@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanket Ghosh | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--primary:#4CAF50;
+--primary-dark:#388E3C;
+--accent:#e8f5e9;
+--dark:#1a1a1a;
+--text:#333;
+--gray:#f9f9f9;
+--white:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+color:var(--text);
+line-height:1.7;
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:white;
+box-shadow:0 2px 15px rgba(0,0,0,0.05);
+z-index:1000;
+}
+
+.logo{
+font-weight:700;
+font-size:1.4rem;
+color:var(--primary);
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+.nav-links a{
+text-decoration:none;
+font-weight:600;
+color:#333;
+}
+
+.nav-links a:hover{
+color:var(--primary);
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+padding:0 10%;
+background:linear-gradient(135deg,#e8f5e9,#ffffff);
+}
+
+.hero h1{
+font-size:3.5rem;
+margin-bottom:20px;
+}
+
+.hero span{
+color:var(--primary);
+}
+
+.hero p{
+max-width:600px;
+margin-bottom:25px;
+font-size:1.1rem;
+}
+
+.btn{
+padding:12px 28px;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+margin-right:10px;
+}
+
+.btn-primary{
+background:var(--primary);
+color:white;
+}
+
+.btn-outline{
+border:2px solid var(--primary);
+color:var(--primary);
+}
+
+/* SECTIONS */
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+font-size:2.3rem;
+margin-bottom:40px;
+position:relative;
+}
+
+.section-title::after{
+content:'';
+position:absolute;
+left:0;
+bottom:-10px;
+width:50px;
+height:4px;
+background:var(--primary);
+}
+
+/* TIMELINE STYLE */
+
+.timeline{
+border-left:3px solid var(--accent);
+padding-left:30px;
+margin-left:20px;
+}
+
+.timeline-item{
+position:relative;
+margin-bottom:35px;
+}
+
+.timeline-item::before{
+content:'';
+position:absolute;
+left:-38px;
+top:5px;
+width:12px;
+height:12px;
+background:var(--primary);
+border:4px solid white;
+border-radius:50%;
+box-shadow:0 0 0 3px var(--accent);
+}
+
+/* PROJECT */
+
+.project{
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 15px 25px rgba(0,0,0,0.05);
+}
+
+/* CONTACT */
+
+.contact-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.info-item{
+margin-bottom:20px;
+}
+
+footer{
+background:#111;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.4rem;
+}
+
+.nav-links{
+display:none;
+}
+
+.contact-container{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">SANKET GHOSH</div>
+
+<ul class="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Project</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div>
+
+<p style="color:var(--primary);font-weight:700;letter-spacing:2px;text-transform:uppercase;">
+B.Tech CSE
+</p>
+
+<h1>Sanket <span>Ghosh</span></h1>
+
+<p>
+Motivated Computer Science undergraduate with strong academic fundamentals
+and a keen interest in learning new technologies and improving programming skills.
+</p>
+
+<a href="#projects" class="btn btn-primary">View Project</a>
+<a href="#contact" class="btn btn-outline">Contact Me</a>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<p style="max-width:700px;font-size:1.1rem;">
+Motivated B.Tech Computer Science student with strong academic foundations and a passion for technology.
+Adaptable and disciplined, capable of working independently and in team environments while continuously
+developing technical and problem-solving skills.
+</p>
+
+</section>
+
+
+<!-- EDUCATION -->
+
+<section id="education" style="background:#f9f9f9;">
+
+<h2 class="section-title">Education</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>B.Tech – Computer Science & Engineering</h3>
+<p>B.P. Poddar Institute of Management & Technology</p>
+<p>MAKAUT University</p>
+<p><strong>CGPA: 8.07 (Up to 5th Semester)</strong></p>
+</div>
+
+<div class="timeline-item">
+<h3>Higher Secondary Education (2023)</h3>
+<p>Burdwan Municipal High School</p>
+<p>Board: WBCHSE</p>
+<p><strong>Marks: 83.2%</strong></p>
+</div>
+
+<div class="timeline-item">
+<h3>Secondary Education (2021)</h3>
+<p>Burdwan Municipal High School</p>
+<p>Board: WBBSE</p>
+<p><strong>Marks: 89.96%</strong></p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SKILLS (TIMELINE STYLE) -->
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Programming Languages</h3>
+<p>C (Basic), Java (Basic)</p>
+</div>
+
+<div class="timeline-item">
+<h3>Tools</h3>
+<p>VS Code, MS Office, Excel</p>
+</div>
+
+<div class="timeline-item">
+<h3>Soft Skills</h3>
+<p>Problem Solving, Communication, Adaptability, Decision Making, Teamwork</p>
+</div>
+
+<div class="timeline-item">
+<h3>Languages Known</h3>
+<p>English (Intermediate), Bengali (Fluent), Hindi (Fluent)</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECT -->
+
+<section id="projects" style="background:#f9f9f9;">
+
+<h2 class="section-title">Project</h2>
+
+<div class="project">
+
+<h3>Language to Language Translator (Python)</h3>
+
+<p style="margin-top:10px;">
+Built a Python-based language translator that converts text between multiple languages
+using translation APIs with focus on accuracy and real-time performance.
+</p>
+
+<ul style="margin-top:15px;">
+<li>Real-time translation</li>
+<li>Multi-language support</li>
+<li>API-based translation system</li>
+<li>User-friendly interface</li>
+</ul>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="contact-container">
+
+<div>
+
+<div class="info-item">
+<h4>Address</h4>
+<p>Jagat Berh, Kalachandtala<br>
+Sripally, Purba Bardhaman<br>
+West Bengal – 713103</p>
+</div>
+
+<div class="info-item">
+<h4>Email</h4>
+<p>ghoshsanket9876654321@gmail.com</p>
+</div>
+
+<div class="info-item">
+<h4>Phone</h4>
+<p>+91 8389907748</p>
+</div>
+
+<div class="info-item">
+<h4>LinkedIn</h4>
+<p>
+<a href="https://linkedin.com/in/sanket-ghosh-1a8ba82a9/" target="_blank" style="color:var(--primary); text-decoration:none;">
+linkedin.com/in/sanket-ghosh-1a8ba82a9
+</a>
+</p>
+</div>
+
+</div>
+
+<div style="background:white;padding:25px;border-radius:10px;box-shadow:0 10px 20px rgba(0,0,0,0.05);">
+
+<form>
+
+<input type="text" placeholder="Name" style="width:100%;padding:10px;margin-bottom:10px;border:1px solid #ddd;border-radius:6px;">
+
+<input type="email" placeholder="Email" style="width:100%;padding:10px;margin-bottom:10px;border:1px solid #ddd;border-radius:6px;">
+
+<textarea rows="4" placeholder="Message" style="width:100%;padding:10px;margin-bottom:10px;border:1px solid #ddd;border-radius:6px;"></textarea>
+
+<button class="btn btn-primary" style="width:100%;border:none;">Send Message</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Sanket Ghosh</h3>
+
+<p style="margin-top:10px;">
+Problem Solving • Communication • Adaptability • Teamwork
+</p>
+
+</footer>
+
+
+<script>
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+anchor.addEventListener('click',function(e){
+e.preventDefault();
+document.querySelector(this.getAttribute('href')).scrollIntoView({
+behavior:'smooth'
+});
+});
+});
+
+</script>
+
+</body>
+</html>
+```
